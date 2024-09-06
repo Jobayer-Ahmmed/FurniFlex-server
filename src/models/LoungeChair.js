@@ -12,5 +12,5 @@ const loungeChairSchema = new Schema({
     description: {type: String}
 })
 
-const rockingChairModel = model("loungeChairCollectioin", loungeChairSchema)
+const loungeChairModel = model("loungeChairCollectioin", loungeChairSchema)
 export default loungeChairModel

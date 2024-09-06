@@ -1,6 +1,7 @@
 import express from "express"
 import applyMiddleWare from "./middlewares/applyMiddleWare.js"
 import rockingChairGet from "./routes/rockingChairRoutes/rockingChairGetRoute/index.js"
+import loungeChairGet from "./routes/loungeChairRoutes/LoungeChairGetRoute/index.js"
 
 
 
@@ -8,6 +9,7 @@ const app =express()
 
 applyMiddleWare(app)
 app.use(rockingChairGet)
+app.use(loungeChairGet)
 
 
 app.get("/health", (req, res)=>{
